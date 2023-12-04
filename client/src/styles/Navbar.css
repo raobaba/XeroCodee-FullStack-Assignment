@@ -1,48 +1,84 @@
 .Navbar {
-    width: 75%;
-    margin: auto;
-    justify-content: space-between;
-    height: 55px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    display: flex;
-    font-family: 'Nunito Sans', sans-serif;
-    border-radius: 5px;
+  width: 75%;
+  margin: auto;
+  justify-content: space-between;
+  height: 55px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  font-family: "Nunito Sans", sans-serif;
+  border-radius: 5px;
+}
+
+.Logo {
+  margin-top: 5px;
+  margin-left: 45px;
+}
+.desk-navbar {
+  width: 65%;
+  justify-content: space-between;
+  display: flex;
+}
+
+.Navbar-links {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  color: rgb(56, 54, 54);
+}
+
+.Navbar-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.SignIn {
+  margin-top: 12px;
+  padding-top: 5px;
+  width: 80px;
+  height: 28px;
+  border-radius: 4px;
+  color: #204730;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #17472b;
+  margin-right: 45px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .Navbar {
+    width: 100%;
   }
-  
-  .Logo {
-    margin-top: 5px;
-    margin-left: 45px;
+  .desk-navbar {
+    width: 68%;
   }
-  
   .Navbar-links {
-    width: 30%;
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    padding-top: 15px;
-    font-weight: 600;
-    color: rgb(56, 54, 54);
+    width: 55%;
   }
-  
-  .Navbar-links a {
-    text-decoration: none;
-    color: #333; 
-   
+}
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  .Navbar {
+    width: 100%;
   }
-  
-  .SignIn {
-    margin-top: 12px;
-    padding-top: 5px;
-    width: 80px;
-    height: 28px;
-    border-radius: 4px;
-    color: #204730;
-    font-weight: bold;
-    cursor: pointer;
-    text-align: center;
-    border: 1px solid #17472b;
-    margin-right: 45px;
-    font-weight: 400;
-    text-decoration: none;
+  .desk-navbar {
+    width: 78%;
   }
-  
+  .Navbar-links {
+    width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  .Navbar {
+    width: 100%;
+  }
+  .desk-navbar {
+    display: none;
+  }
+  .Navbar-links {
+    width: 60%;
+  }
+}
