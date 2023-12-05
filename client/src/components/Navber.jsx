@@ -23,7 +23,7 @@ function Navbar() {
   }, []);
 
   return (
-    <div className="Navbar">
+    <div className="MainNavbar">
       <div className={`Logo ${showDrawer ? "hide-logo" : ""}`}>
         <img src={Logo} alt="logo" width={40} />
       </div>
@@ -34,7 +34,7 @@ function Navbar() {
           <Link to="/contact">Contact</Link>
           <Link to="/careers">Careers</Link>
         </div>
-        <Link to="/signin" className="SignIn">
+        <Link to="/signin" className="SignInButton">
           Sign In
         </Link>
       </div>
@@ -52,7 +52,7 @@ function Navbar() {
         <Link to="/team">Team</Link>
         <Link to="/contact">Contact</Link>
         <Link to="/careers">Careers</Link>
-        <Link className="SignIn" to="/signin">
+        <Link className="SignInButton" to="/signin">
           Sign In
         </Link>
         </div>
