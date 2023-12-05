@@ -49,6 +49,49 @@
   text-decoration: none;
 }
 
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  margin-right: 55px;
+  margin-top: 6px;
+}
+
+.drawer {
+  display: none;
+  width: 100%;
+  height: 0;
+  background-color: #f9f9f9;
+  border: none;
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  top: -245px; /* Initially off-screen */
+  transition: top 0.5s ease-in-out, height 0.5s ease-in-out; /* Add top transition */
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.drawer.show {
+  display: grid;
+  top: 0; /* Slide in from the top */
+
+  height: 454px;
+}
+
+
+
+.Logo {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hide-logo {
+  opacity: 0;
+  pointer-events: none;
+}
+.logo{
+  margin-left: -3px;
+}
+
 @media screen and (min-width: 600px) and (max-width: 1000px) {
   .Navbar {
     width: 100%;
@@ -59,8 +102,9 @@
   .Navbar-links {
     width: 55%;
   }
+
 }
-@media screen and (min-width: 400px) and (max-width: 600px) {
+@media screen and (min-width: 500px) and (max-width: 600px) {
   .Navbar {
     width: 100%;
   }
@@ -70,15 +114,51 @@
   .Navbar-links {
     width: 60%;
   }
+ 
 }
 @media (max-width: 500px) {
-  .Navbar {
+ .Navbar {
     width: 100%;
+    justify-content: space-between;
   }
+
   .desk-navbar {
     display: none;
   }
-  .Navbar-links {
-    width: 60%;
+
+  .menu-icon {
+    display: block; 
+  }
+
+  .drawer {
+    width: 100%;
+    display: none;
+  }
+  .drawered{
+    display: grid;
+    margin-left: 43.5%;
+  }
+  .drawered a {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .drawered > a:nth-child(3){
+    margin-left: -7px;
+  }
+  .drawered > a:nth-child(4){
+    margin-left: -6px;
+  }
+  .drawered > a:nth-child(5){
+    margin-left: -14px;
+  }
+  .drawered > a:nth-child(6){
+    margin-left: -14px;
+  }
+  .drawered a {
+    text-decoration: none;
+    color: #333;
+  }
+  .SignIn{
+    margin-left: -20px;
   }
 }
