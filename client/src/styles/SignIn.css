@@ -1,0 +1,120 @@
+.signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(204,224,252)
+  }
+  
+  .signin-content {
+    display: flex;
+    align-items: center;
+    width: 62%;
+    height: 75%;
+    padding: 20px;
+    background-color: rgb(255,255,255);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signin-header {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 50%;
+    height: 100%;
+  }
+
+  .logo-section img {
+    width: 65px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .horizontal-line{
+    width: 1px;
+    height: 0.0000001px;
+    border: 1px solid black;
+  }
+ 
+  .login-section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .login-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3;
+  }
+  .social-login-section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .social-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .social-button:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .signup-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .signup-link:hover {
+    text-decoration: underline;
+  }
+  
+  .vertical-line{
+    width: 0.0001px;
+    height: 80%;
+    border: 1px solid rgb(233, 223, 223);
+  }
+
+  .image-section {
+    display: grid;
+    width: 55%;
+    height: 100%;
+    margin-top: 20px;
+  }
+  .digital-image {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .bottom-blue-image {
+    width: 100%;
+    padding-top: 62px;
+    margin-left: 20px;
+    
+  }
+  

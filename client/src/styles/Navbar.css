@@ -51,6 +51,10 @@
   font-weight: 400;
   text-decoration: none;
 }
+.SignInButton:hover{
+  background-color: #17472b;
+  color: aliceblue;
+}
 
 .menu-icon {
   display: none;

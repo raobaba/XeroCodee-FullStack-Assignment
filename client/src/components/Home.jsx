@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './Navber'
-import Suggestion from './Suggestion'
 import Footer from './Footer'
+import Suggestion from '../pages/Suggestion'
 
 function Home() {
   return (

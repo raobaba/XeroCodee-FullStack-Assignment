@@ -21,7 +21,7 @@ function Footer() {
             </div>
           </div>
           <div className="footer-section">
-            <h2>Our Links</h2>
+            <h2 className="our-link" >Our Links</h2>
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#">Career</a></li>

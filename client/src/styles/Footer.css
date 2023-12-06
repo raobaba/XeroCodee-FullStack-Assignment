@@ -63,8 +63,14 @@
   
     .footer-section {
       flex: 1 1 auto;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
       text-align: center;
+    }
+    .social-icons{
+      margin-left: 30%;
+    }
+    .our-link{
+      margin-top:90%;
     }
   }
   
