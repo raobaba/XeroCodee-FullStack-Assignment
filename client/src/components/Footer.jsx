@@ -10,14 +10,14 @@ function Footer() {
           <div className="footer-section">
             <img src={Logo} alt="logo" width={40}/>
             <p>
-              You get just what you need to run your cloud workloads--no more, no
-              less. Deploy from our single pane of glass, manage them with ease
+              You get just what you need <br /> to run your cloud workloads <br /> --no more, no
+              less. Deploy <br /> from our single pane of glass, manage them with ease <br />
               and scale up as fast as your workload grows
             </p>
             <div className="social-icons">
-            <FaLinkedin />
-            <FaGithub />
-            <FaEnvelope />
+            <FaLinkedin size={25} />
+            <FaGithub size={25}/>
+            <FaEnvelope size={25}/>
             </div>
           </div>
           <div className="footer-section">
@@ -34,7 +34,7 @@ function Footer() {
             <h2>Our Services</h2>
             <ul>
               <li><a href="#">Infrastructure Provisioning</a></li>
-              <li><a href="#">Network Infrastructure Automation</a></li>
+              <li><a href="#">Network Infrastructure</a></li>
               <li><a href="#">Cost Optimization</a></li>
               <li><a href="#">Cloud Migration</a></li>
               <li><a href="#">Kubernetes at Scale</a></li>
