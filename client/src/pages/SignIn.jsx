@@ -15,7 +15,11 @@ function SignIn() {
             <h2>Welcome Arya Soni!</h2>
           </div>
           <div className="login-section">
-            <p> <p className="horizontal-line"></p> Login to your account <label className="horizontal-line"></label></p>
+            <div class="underlined-text">
+              {" "}
+              <span className="underline"></span>
+              Login to your Account <span className="underline"></span>{" "}
+            </div>
             <input className="input-field" type="email" name="Email" />
             <input className="input-field" type="password" name="Password" />
             <button className="login-button">LOGIN</button>
@@ -33,21 +37,18 @@ function SignIn() {
               </p>
             </div>
           </div>
+          <div className="bottom-img-container">
+            <img src={buttomBlue} alt="bottomImage" className="bottom-img" />
+          </div>
         </div>
-        <div className="vertical-line">
-
-        </div>
+        <div className="vertical-line"></div>
         <div className="image-section">
           <img
             src={digitalTransformation}
             alt="digital"
             className="digital-image"
           />
-          <img 
-          src={buttomBlue} 
-          alt="buttom" 
-          className="bottom-blue-image" 
-          />
+          <img src={buttomBlue} alt="buttom" className="bottom-blue-image" />
         </div>
       </div>
     </div>
