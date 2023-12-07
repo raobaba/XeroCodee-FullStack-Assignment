@@ -1,8 +1,8 @@
 import React from "react";
-import '../styles/Suggestion.css'
-import HeroImage from '../assets/hero.png'
+import '../styles/Suggestion.scss';
+import HeroImage from '../assets/hero.png';
 
-function Suggestion() {
+const Suggestion: React.FC = () => {
   return (
     <div className="suggestion-container">
       <div className="title-section">
@@ -14,7 +14,7 @@ function Suggestion() {
       <div className="description-section">
         <p>
           Begin ahead of the curve with <label className="xerocodee-label">XeroCodee</label>. No need to spend a year
-          crafting a Kubernetes platform. <br /> Streamline your process and focus on
+          crafting a Kubernetes platform. Streamline your process and focus on
           what truly matters.
         </p>
       </div>

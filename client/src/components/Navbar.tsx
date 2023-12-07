@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "../styles/Navbar.css";
+import "../styles/Navbar.scss";
 import Logo from "../assets/logo-1f6eb176.png";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
 
-function Navbar() {
+const Navbar: React.FC = () => {
   const [showDrawer, setShowDrawer] = useState(false);
 
   const toggleDrawer = () => {
     setShowDrawer(!showDrawer);
   };
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 500) {
@@ -23,7 +24,7 @@ function Navbar() {
   }, []);
 
   return (
-    <div className="MainNavbar">
+    <div className="MainNavbar m-auto sticky ">
       <Link to="/">
         <div className={`Logo ${showDrawer ? "hide-logo" : ""}`}>
           <img src={Logo} alt="logo" width={40} />
@@ -61,6 +62,6 @@ function Navbar() {
       </div>
     </div>
   );
-}
+};
 
 export default Navbar;

@@ -1,9 +1,9 @@
 import React from "react";
 import Logo from "../assets/logo-1f6eb176.png";
-import '../styles/Footer.css';
+import '../styles/Footer.scss';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
-function Footer() {
+const Footer: React.FC = () => {
     return (
       <div className="footer">
         <div className="footer-content">
@@ -15,9 +15,9 @@ function Footer() {
               and scale up as fast as your workload grows
             </p>
             <div className="social-icons">
-            <FaLinkedin size={25} />
-            <FaGithub size={25}/>
-            <FaEnvelope size={25}/>
+              <FaLinkedin size={25} />
+              <FaGithub size={25}/>
+              <FaEnvelope size={25}/>
             </div>
           </div>
           <div className="footer-section">
@@ -57,7 +57,6 @@ function Footer() {
         </div>
       </div>
     );
-  }
-  
-  export default Footer;
-  
+}
+
+export default Footer;

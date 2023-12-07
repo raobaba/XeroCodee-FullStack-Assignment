@@ -3,11 +3,11 @@ import Logo from "../assets/logo-1f6eb176.png";
 import digitalTransformation from "../assets/digital-transformation-animate.svg";
 import buttomBlue from "../assets/bottomBlueWave-fc128c22.svg";
 import { Link } from "react-router-dom";
-import "../styles/SignIn.css";
+import "../styles/SignIn.scss";
 
-function SignIn() {
+const SignUp: React.FC = () => {
   return (
-    <div className="signin-container">
+    <div className="signup-container">
       <div className="signin-content">
         <div className="signin-header">
           <div className="logo-section">
@@ -15,25 +15,30 @@ function SignIn() {
             <h2>Welcome Arya Soni!</h2>
           </div>
           <div className="login-section">
-            <div class="underlined-text">
-              {" "}
+            <div className="underlined-text">
               <span className="underline"></span>
-              Login to your Account <span className="underline"></span>{" "}
+              <span className="content">Create your Account</span>{" "}
+              <span className="underline"></span>
             </div>
             <input className="input-field" type="email" name="Email" />
             <input className="input-field" type="password" name="Password" />
-            <button className="login-button">LOGIN</button>
+            <input className="input-field" type="email" name="Email" />
+            <input className="input-field" type="password" name="Password" />
+            <input className="input-field" type="email" name="Email" />
+            <button className="login-button">SIGN UP</button>
           </div>
           <p>Or</p>
           <div className="social-login-section">
             <div>
-              <button className="social-button">Google Login</button>
-              <button className="social-button">Github Login</button>
+              <button className="social-button">Google SigUp</button>
+              <button className="social-button">Github SigUp</button>
             </div>
             <div>
               <p>
-                Don't have an account ?{" "}
-                <Link className="signup-link">SIGN UP</Link>{" "}
+                Already have an account ?{" "}
+                <Link to="/signin" className="signup-link">
+                  LOG IN
+                </Link>
               </p>
             </div>
           </div>
@@ -53,6 +58,6 @@ function SignIn() {
       </div>
     </div>
   );
-}
+};
 
-export default SignIn;
+export default SignUp;
