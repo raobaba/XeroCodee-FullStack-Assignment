@@ -27,7 +27,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`MainNavbar m-auto sticky`}>
+    <div className="MainNavbar m-auto sticky">
       <Link href="/">
         <div className={`Logo ${showDrawer ? "hide-logo" : ""}`}>
           <Image src={Logo} alt="logo" width={40} height={40} />
