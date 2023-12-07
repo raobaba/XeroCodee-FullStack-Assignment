@@ -1,0 +1,219 @@
+.MainNavbar {
+    width: 75%;
+    justify-content: space-between;
+    height: 55px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    font-family: "Nunito Sans", sans-serif;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    backdrop-filter: blur(10px); 
+    z-index: 1000; 
+  }
+  
+  .Logo {
+    margin-top: 5px;
+    margin-left: 45px;
+  }
+  .desk-navbar {
+    width: 65%;
+    justify-content: space-between;
+    display: flex;
+  }
+  
+  .Navbar-links {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 530;
+    color: rgb(70,79,94);
+  }
+  
+  .Navbar-links a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .SignInButton {
+    margin-top: 12px;
+    padding-top: 5px;
+    width: 80px;
+    height: 35px;
+    border-radius: 6px;
+    color: #204730;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #17472b;
+    margin-right: 45px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .SignInButton:hover{
+    background-color: #17472b;
+    color: aliceblue;
+  }
+  
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    margin-right: 55px;
+    margin-top: 6px;
+  }
+  
+  .drawer {
+    display: none;
+    width: 100%;
+    height: 0;
+    background-color: #f9f9f9;
+    border: none;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    top: -245px; /* Initially off-screen */
+    transition: top 0.5s ease-in-out, height 0.5s ease-in-out; /* Add top transition */
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .drawer.show {
+    display: grid;
+    top: 0; /* Slide in from the top */
+  
+    height: 454px;
+  }
+  
+  
+  
+  .Logo {
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .hide-logo {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .logo{
+    margin-left: -3px;
+  }
+  
+  @media screen and (min-width: 1024px) and (max-width: 1199px) {
+    .MainNavbar {
+      width: 100%;
+    }
+    .desk-navbar {
+      width: 68%;
+    }
+    .Navbar-links {
+      width: 55%;
+    }
+  
+  }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .MainNavbar {
+      width: 100%;
+    }
+    .desk-navbar {
+      width: 78%;
+    }
+    .Navbar-links {
+      width: 60%;
+    }
+   
+  }
+  @media screen and (min-width:481px) and (max-width: 767px) {
+   .MainNavbar {
+      width: 100%;
+      justify-content: space-between;
+    }
+  
+    .desk-navbar {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: block; 
+    }
+  
+    .drawer {
+      width: 100%;
+      display: none;
+    }
+    .drawered{
+      display: grid;
+      margin-left: 43.5%;
+    }
+    .drawered a {
+      font-size: 20px;
+      font-weight: 500;
+    }
+    .drawered > a:nth-child(3){
+      margin-left: -7px;
+    }
+    .drawered > a:nth-child(4){
+      margin-left: -6px;
+    }
+    .drawered > a:nth-child(5){
+      margin-left: -14px;
+    }
+    .drawered > a:nth-child(6){
+      margin-left: -14px;
+    }
+    .drawered a {
+      text-decoration: none;
+      color: #333;
+    }
+    .SignInButton{
+      margin-left: -20px;
+    }
+  }
+  
+  @media (max-width:480px) {
+   .MainNavbar {
+      width: 100%;
+      justify-content: space-between;
+    }
+  
+    .desk-navbar {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: block; 
+    }
+  
+    .drawer {
+      width: 100%;
+      display: none;
+    }
+    .drawered{
+      display: grid;
+      margin-left: 43.5%;
+    }
+    .drawered a {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .drawered > a:nth-child(3){
+      margin-left: -7px;
+    }
+    .drawered > a:nth-child(4){
+      margin-left: -6px;
+    }
+    .drawered > a:nth-child(5){
+      margin-left: -14px;
+    }
+    .drawered > a:nth-child(6){
+      margin-left: -14px;
+    }
+    .drawered a {
+      text-decoration: none;
+      color: #333;
+    }
+    .SignInButton{
+      margin-left: -20px;
+    }
+  }
+  
+  
