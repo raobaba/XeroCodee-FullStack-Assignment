@@ -1,0 +1,303 @@
+// Existing code remains the same...
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.header-left-section {
+  display: flex;
+  width: 35%;
+  height: 50px;
+  justify-content: center;
+  gap: 10%;
+  margin-left: 5%;
+  align-items: center;
+}
+
+.xero-logo {
+  display: flex;
+}
+
+.input-box {
+  display: flex;
+  width: 65%;
+  position: relative;
+}
+
+.input-box input {
+  width: 100%;
+  height: 45px;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+
+.search-box {
+  display: flex;
+  width: 40px;
+  margin: auto;
+  border-radius: 50%;
+  align-items: center;
+  height: 40px;
+  justify-content: space-around;
+  background-color: dodgerblue;
+  margin-left: -45px;
+}
+
+.xero-codee-text {
+  margin-top: 10px;
+  margin-left: -10px;
+  font-weight: 900;
+}
+
+.header-right-section {
+  display: flex;
+  width: 40%;
+  height: 50px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.plan-section {
+  display: flex;
+  width: 30%;
+  gap: 5%;
+  height: 40px;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 240, 3);
+}
+
+.user-section {
+  display: flex;
+  height: 35px;
+  width: 25%;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.profile-section {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.plan {
+  border-radius: 50%;
+  width: 38px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
+}
+
+.notification-section,
+.inbox-section,
+.setting-section,
+.profile-section {
+  background-color: #ffff;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 40px;
+  height: 35px;
+}
+
+.menu-bar-section{
+  display: none;
+}
+
+.menu-section {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background-color: #fff;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.menu-bar.active ~ .menu-section {
+  display: block;
+}
+
+.menu-bar{
+  display: none;
+}
+
+@media screen and (min-width: 468px) and (max-width: 767px) {
+
+  .header-left-section {
+    display: flex;
+    width: 70%;
+    height: 50px;
+    justify-content: center;
+    gap: 10%;
+    margin-left: 5%;
+    align-items: center;
+  }
+
+
+  .header-right-section {
+    display: flex;
+    width: 30%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .upgrad-user {
+    display: none;
+  }
+
+  .plan-section {
+    display: flex;
+    width: 40px;
+    height: 35px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 240, 3);
+  }
+
+  .user-section {
+    display: flex;
+    height: 35px;
+    width: 15%;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .profile-section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .plan {
+    border-radius: 5px;
+    width: 38px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff;
+  }
+  .header-right-section {
+    display: none;
+  }
+
+  .menu-bar {
+    display: block;
+  }
+
+  .menu-bar-section{
+    display: block;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1168px) {
+
+  .header-left-section {
+    display: flex;
+    width: 50%;
+    height: 50px;
+    justify-content: center;
+    gap: 10%;
+    margin-left: 5%;
+    align-items: center;
+  }
+
+  .header-right-section {
+    display: flex;
+    width: 30%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .upgrad-user {
+    display: none;
+  }
+
+  .plan-section {
+    display: flex;
+    width: 40px;
+    height: 35px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 240, 3);
+  }
+
+  .input-box {
+    display: flex;
+    width: 75%;
+    position: relative;
+  }
+  
+  .input-box input {
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+    padding-left: 20px;
+  }
+  
+  .search-box {
+    display: flex;
+    width: 40px;
+    margin: auto;
+    border-radius: 50%;
+    align-items: center;
+    height: 40px;
+    justify-content: space-around;
+    background-color: dodgerblue;
+    margin-left: -45px;
+  }
+
+  .user-section {
+    display: flex;
+    height: 35px;
+    width: 15%;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .profile-section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .plan {
+    border-radius: 5px;
+    width: 38px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff;
+  }
+}
