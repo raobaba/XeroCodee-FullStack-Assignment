@@ -3,7 +3,6 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-
   width: 100%;
   background-color: rgb(204, 224, 252);
 }
@@ -101,7 +100,7 @@
   height: 180px;
 }
 
-.signup-input-group{
+.signup-input-group {
   height: 300px;
 }
 .sign-input-field {
@@ -172,10 +171,10 @@
   height: 35px;
 }
 
-.button-group div{
+.button-group div {
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-  rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-transition: background-color 0.3s, transform 0.2s;
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .button-group div:hover {
@@ -201,10 +200,7 @@ transition: background-color 0.3s, transform 0.2s;
   font-weight: 600;
 }
 
-.google,
-.github:hover{
-  color: #f5f5f5;
-}
+
 
 .redirection-link {
   color: grey;
