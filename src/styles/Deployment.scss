@@ -1,0 +1,236 @@
+.deployment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(204, 224, 252);
+  }
+  
+  .deployment-content {
+    align-items: center;
+    width: 65%;
+    height: 65%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  }
+
+  .logo-section {
+    width: 20%;
+    margin: auto;
+    margin-top: 5%;
+  }
+  
+  .logo-section img {
+    width: 63px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .xerocode-text {
+    font-size: large;
+    font-weight: 900;
+    margin-left: 45px;
+    position: absolute;
+  }
+  
+  .text-description {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-top: 2%;
+  }
+  
+  .underline-text {
+    width: 100%;
+    margin-top: 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  
+  .underline {
+    width: 20%;
+    height: 5px;
+    border: 1px solid rgb(223, 211, 211);
+    margin-top: 3%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: grey;
+  }
+  
+  .text-description h3 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  
+  .button-group {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+  }
+
+  .button-group button {
+    width: 29%;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 15px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .button-group button:hover {
+    background-color: rgb(31, 100, 255);
+    color: #ffff;
+    transform: scale(1.05);
+  }
+  
+  
+  .button-group button.active {
+    background-color: rgb(31, 100, 255);
+    transform: scale(1.05);
+    color: #ffff;
+
+  }
+
+  @media screen and (max-width:467px) {
+    .button-group {
+      width: 60%;
+      display: grid;
+      gap: 10%;
+      text-align: center;
+    }
+  
+    .button-group button {
+      width: 125%;
+      margin: auto;
+      gap: 10px;
+      margin-top: 5%;
+    }
+  }
+  @media screen and (max-width:467px)  {
+    .deployment-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100%;
+      background-color: rgb(204, 224, 252);
+    }
+    .deployment-content {
+      width: 90%;
+      height: auto;
+      height: 65%;
+      margin: 10% auto;
+    }
+
+    .button-container {
+      display: grid;
+      place-items: center; 
+      height: 100%;
+    }
+    
+    .button-group {
+      width: 60%;
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center; 
+    }
+    
+    .button-group button {
+      width: 100%;
+      margin-top: 5%;
+    }
+    .underline-text {
+      width: 100%;
+      margin-top: 5%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      font-size: 10px;
+      white-space: normal;
+    }
+    
+  }
+
+
+@media screen and (min-width:468px) and (max-width:768px) {
+  .deployment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(204, 224, 252);
+  }
+  .deployment-content {
+    width: 80%;
+    height: auto;
+    height: 65%;
+    margin: 10% auto;
+  }
+
+  .logo-section {
+    width: 20%;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .logo-section img {
+    width: 63px;
+    display: flex;
+    align-items: center;
+  }
+
+  .xerocode-text {
+    font-size: medium;
+    margin-left: 48px;
+  }
+
+  .text-description {
+    width: 80%;
+    margin-top: 5%;
+  }
+
+  .underline-text {
+    width: 100%;
+    margin-top: 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    white-space: normal;
+  }
+  
+  .underline {
+    width: 20%;
+    height: 5px;
+    border: 1px solid rgb(223, 211, 211);
+    margin-top: 3%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: grey;
+  }
+
+  .button-group {
+    width: 60%;
+    display: flex;
+  }
+
+  .button-group button {
+    width: 40%;
+    margin-top: 5%;
+  }
+  }

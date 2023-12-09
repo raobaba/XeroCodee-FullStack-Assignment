@@ -32,7 +32,7 @@ function Details() {
           <h3>Welcome Arya Soni !</h3>
           <div className="underline-text">
             <span className="underline"></span>
-            <p>Choose from the following</p>
+            <p>Choose from the following option</p>
             <span className="underline"></span>
           </div>
         </div>
