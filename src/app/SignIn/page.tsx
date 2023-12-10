@@ -1,6 +1,7 @@
-"use-client";
+"use client";
 import React from "react";
 import Logo from "../../assets/logo-1f6eb176.png";
+import { useRouter } from "next/navigation";
 import digitalTransformation from "../../assets/digital-transformation-animate.svg";
 import buttomBlue from "../../assets/bottomBlueWave-fc128c22.svg";
 import { FcGoogle } from "react-icons/fc";
@@ -10,6 +11,7 @@ import Image from "next/image";
 import "../../styles/SignIn.scss";
 
 const SignIn: React.FC = () => {
+  const router = useRouter();
   return (
     <div className="signin-container">
       <div className="signin-content">
@@ -40,7 +42,7 @@ const SignIn: React.FC = () => {
             <div className="input-group">
               <input className="input-field" type="email" placeholder="Email ID" />
               <input className="input-field" type="password" placeholder="Password"/>
-              <button className="login-button">LOGIN</button>
+              <button onClick={() => router.push('/Details')} className="login-button">LOGIN</button>
             </div>
           </div>
           <p style={{ color: "grey",marginTop:"10px",marginBottom:'10px' }}>Or</p>

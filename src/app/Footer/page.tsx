@@ -1,4 +1,3 @@
-"use-client"
 import React from "react";
 import Logo from "../../assets/logo-1f6eb176.png";
 import '../../styles/Footer.scss';

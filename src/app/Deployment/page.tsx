@@ -1,10 +1,12 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import Logo from "../../assets/logo-1f6eb176.png";
 import "../../styles/Deployment.scss";
 
 function Deployment() {
+  const router = useRouter();
   const [buttonText, setButtonText] = useState("XeroCodee Hosting");
   const [activeButton, setActiveButton] = useState(false);
 
@@ -30,7 +32,12 @@ function Deployment() {
         </div>
         <div className="button-container">
           <div className="button-group mt-4">
-            <button className="self-host">Self Hosting</button>
+            <button
+              onClick={() => router.push('/DashPage')}
+              className="self-host"
+            >
+              Self Hosting
+            </button>
             <button
               className={`xero-host ${
                 activeButton ? "ring ring-blue-500" : ""

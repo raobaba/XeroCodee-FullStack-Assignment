@@ -14,29 +14,124 @@
   border-radius: 5px;
 }
 
-.greet{
-    width: 40%;
-    height: 100%;
+.greet {
+  width: 40%;
+  height: 100%;
 }
 
-.greet h1{
-   font-weight: 800;
-   font-size: 50px;
-   padding-left: 10px;
-}
-.greet p{
-    font-size: 14px;
+.greet h1 {
+  font-weight: 800;
+  font-size: 50px;
+  padding-left: 10px;
 }
 
-.toggle{
+.greet p {
+  font-size: 14px;
+}
+
+.toggle {
+  display: flex;
+  width: 24%;
+  height: 10%;
+  margin-top: 5px;
+  justify-content: space-around;
+}
+
+.toggle span {
+  margin-right: 5px;
+}
+
+span {
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+svg {
+  cursor: pointer;
+}
+
+.toggle span {
+
+  font-size: 14px;
+  margin-right: 10px;
+
+}
+
+@media screen and (min-width:768px) and (max-width:1303px)  {
+  .NavPage-Content {
+    width: 90%;
+    height: 80%;
+    margin: auto;
     display: flex;
-    width: 24%;
-    height: 10%;
-    margin-top: 5px;
     justify-content: space-between;
-}
-.toggle span{
+    background-color: rgb(246, 250, 255);
+    margin-top: 1%;
+    border-radius: 5px;
+  }
+  
+  .greet {
+    width: 50%;
+    height: 100%;
+  }
+  .toggle {
+    height: 100%;
+    width: 50%;
+  }
+
+  .toggle span {
+    margin-right: 5px;
+  }
+
+  span {
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  svg {
+    cursor: pointer;
+  }
+  
+  .toggle span {
     font-size: 14px;
     margin-right: 10px;
+  
+  }
 }
 
+
+
+/* Media Queries for different screen sizes */
+@media screen and (max-width: 768px) {
+  .NavPage-Content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .greet,
+  .toggle {
+    width: 100%;
+    text-align: center;
+  }
+
+
+  .toggle {
+    margin-top: 20px;
+  }
+
+  .toggle span {
+    margin-right: 5px;
+  }
+}
+
+span {
+  cursor: pointer;
+}
+
+svg {
+  cursor: pointer;
+}
+
+.toggle span {
+  font-size: 14px;
+  margin-right: 10px;
+}

@@ -1,10 +1,12 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import Logo from "../../assets/logo-1f6eb176.png";
 import "../../styles/Details.scss";
 
 function Details() {
+  const router = useRouter();
   const [showInput, setShowInput] = useState(false);
   const [placeholderText, setPlaceholderText] = useState("");
   const [activeButton, setActiveButton] = useState("");
@@ -70,7 +72,7 @@ function Details() {
               placeholder={placeholderText}
               onChange={handleInputChange}
             />
-            <button className="submit-btn ml-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <button onClick={() => router.push('/Deployment')} className="submit-btn ml-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
               Submit
             </button>
           </div>

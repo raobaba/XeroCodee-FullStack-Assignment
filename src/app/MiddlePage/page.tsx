@@ -1,4 +1,3 @@
-"use-client"
 import React from 'react';
 import '../../styles/MiddlePage.scss'
 import NavPage from '../NavPage/page';
