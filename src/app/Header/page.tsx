@@ -17,7 +17,7 @@ function Header() {
         <div className="header-left-section">
           <div className="xero-logo">
             <Image src={Logo} alt="logo" width={40} />
-            <p className="xero-codee-text">eroCodee.</p>
+            <h4 className="xero-codee-text">eroCodee.</h4>
           </div>
           <div className="input-box">
             <input type="text" placeholder="search..." />

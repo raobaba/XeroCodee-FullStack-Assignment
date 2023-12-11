@@ -1,22 +1,23 @@
 import React from "react";
 import "../../styles/ContentPage.scss";
+import { FaCircleDot } from "react-icons/fa6";
 
 function ContentPage() {
   return (
     <div className="ContentPage">
       <div className="circle-container">
         <div className="big-circle">
-          <div className="small-circle"></div>
+          <FaCircleDot size={30}/>
         </div>
         <div className="vertical"></div>
 
         <div className="big-circle">
-          <div className="small-circle"></div>
+          <FaCircleDot size={30}/>
         </div>
         <div className="vertical"></div>
 
         <div className="big-circle">
-          <div className="small-circle"></div>
+          <FaCircleDot size={30}/>
         </div>
         <div className="vertical"></div>
       </div>

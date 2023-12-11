@@ -1,0 +1,79 @@
+.ProgressBar{
+    width: 100%;
+    height: 100%;
+}
+
+.progress-content{
+    width: 90%;
+    height: 93.5%;
+    border-radius:20px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    margin: auto;
+}
+
+.progress{
+    width:50%;
+    margin: auto;
+}
+
+.towards-xerocodee{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+
+.box-box{
+    width: 100%;
+    height: 65%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 5px;
+}
+.side{
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+}
+.white{
+    width: 35px;
+    height: 35px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+.col-grey{
+    color: grey;
+    height: 40px;
+}
+.box-one{
+    background-color: rgb(255,245,229);
+}
+.box-two{
+    background-color: rgb(252,236,234);
+}
+.box-three{
+    background-color: rgb(237,245,237);
+}
+
+@media only screen and (max-width: 600px) {
+    .progress-content {
+      width: 95%;
+    }
+    .progress {
+      width: 70%;
+    }
+    .side {
+      width: 95%;
+    }
+  }
+  
+  @media only screen and (min-width: 600px) {
+  }
+
+  @media only screen and (min-width: 768px) {
+  }
+  
+  @media only screen and (min-width: 992px) {
+  }
+  
+  @media only screen and (min-width: 1200px) {
+  }
