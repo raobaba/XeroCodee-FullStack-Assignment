@@ -1,13 +1,13 @@
 "use client";
 import React, { useState } from "react";
 import "../../styles/NavPage.scss";
-import { BsToggle2Off, BsToggle2On } from "react-icons/bs"; 
+import { BsToggle2Off, BsToggle2On } from "react-icons/bs";
 
 function NavPage() {
-  const [isTestMode, setIsTestMode] = useState(true); 
+  const [isTestMode, setIsTestMode] = useState(true);
 
   const handleToggle = () => {
-    setIsTestMode(prevMode => !prevMode); 
+    setIsTestMode((prevMode) => !prevMode);
   };
 
   return (

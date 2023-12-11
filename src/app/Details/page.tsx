@@ -26,9 +26,7 @@ function Details() {
       <div className="details-content">
         <div className="logo-section flex items-center">
           <Image src={Logo} alt="logo" width={40} />
-          <h3 className="xerocode-text">
-            eroCodee.
-          </h3>
+          <h3 className="xerocode-text">eroCodee.</h3>
         </div>
         <div className="text-description">
           <h3>Welcome Arya Soni !</h3>
@@ -72,7 +70,10 @@ function Details() {
               placeholder={placeholderText}
               onChange={handleInputChange}
             />
-            <button onClick={() => router.push('/Deployment')} className="submit-btn ml-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <button
+              onClick={() => router.push("/Deployment")}
+              className="submit-btn ml-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >
               Submit
             </button>
           </div>

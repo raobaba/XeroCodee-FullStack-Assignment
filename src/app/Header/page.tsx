@@ -10,7 +10,6 @@ import { FaRegUser } from "react-icons/fa";
 import { TbMenuDeep } from "react-icons/tb";
 
 function Header() {
- 
   return (
     <div className="header">
       <div className="header-content">
@@ -51,8 +50,8 @@ function Header() {
           </div>
         </div>
         <div className="menu-bar-section">
-              <TbMenuDeep size={39}/>
-          </div>
+          <TbMenuDeep size={39} />
+        </div>
       </div>
     </div>
   );

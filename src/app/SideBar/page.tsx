@@ -19,67 +19,67 @@ function SideBar() {
       <div className="sidebar-content">
         <Link href="/DashPage/xerocodee">
           <div className="sidebar-item">
-            <CgMenuGridR className='icon' size={25} />
+            <CgMenuGridR className="icon" size={25} />
             <p className="side-text">XeroCodee</p>
           </div>
         </Link>
         <Link href="/buildercenter">
           <div className="sidebar-item">
-            <FiLayers className='icon' size={25} />
+            <FiLayers className="icon" size={25} />
             <p className="side-text">Builder Center</p>
           </div>
         </Link>
         <Link href="/serviceboard">
           <div className="sidebar-item">
-            <MdOutlineMiscellaneousServices className='icon' size={25} />
+            <MdOutlineMiscellaneousServices className="icon" size={25} />
             <p className="side-text">Service Board</p>
           </div>
         </Link>
         <Link href="/cluster">
           <div className="sidebar-item">
-            <GiCrystalCluster className='icon' size={25} />
+            <GiCrystalCluster className="icon" size={25} />
             <p className="side-text">Cluster</p>
           </div>
         </Link>
         <Link href="/database">
           <div className="sidebar-item">
-            <AiFillDatabase className='icon' size={25} />
+            <AiFillDatabase className="icon" size={25} />
             <p className="side-text">Database</p>
           </div>
         </Link>
         <Link href="/environment">
           <div className="sidebar-item">
-            <FaEnvira className='icon' size={25} />
+            <FaEnvira className="icon" size={25} />
             <p className="side-text">Environment</p>
           </div>
         </Link>
         <Link href="/workflow">
           <div className="sidebar-item">
-            <GiFlowerTwirl className='icon' size={25} />
+            <GiFlowerTwirl className="icon" size={25} />
             <p className="side-text">Workflow</p>
           </div>
         </Link>
         <Link href="/monitoring">
           <div className="sidebar-item">
-            <PiMonitorBold className='icon' size={25} />
+            <PiMonitorBold className="icon" size={25} />
             <p className="side-text">Monitoring</p>
           </div>
         </Link>
         <Link href="/security">
           <div className="sidebar-item">
-            <GrShieldSecurity className='icon' size={25} />
+            <GrShieldSecurity className="icon" size={25} />
             <p className="side-text">Security</p>
           </div>
         </Link>
         <Link href="/webhooks">
           <div className="sidebar-item">
-            <MdOutlineWebhook className='icon' size={25} />
+            <MdOutlineWebhook className="icon" size={25} />
             <p className="side-text">WebHooks</p>
           </div>
         </Link>
         <Link href="/logerror">
           <div className="sidebar-item">
-            <AiOutlineMenuUnfold className='icon' size={25} />
+            <AiOutlineMenuUnfold className="icon" size={25} />
             <p className="side-text">Log Error</p>
           </div>
         </Link>

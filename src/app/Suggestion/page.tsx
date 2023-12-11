@@ -1,7 +1,7 @@
 import React from "react";
-import '../../styles/Suggestion.scss';
+import "../../styles/Suggestion.scss";
 import Image from "next/image";
-import HeroImage from '../../assets/hero.png';
+import HeroImage from "../../assets/hero.png";
 
 const Suggestion: React.FC = () => {
   return (
@@ -14,9 +14,10 @@ const Suggestion: React.FC = () => {
       </div>
       <div className="description-section">
         <p>
-          Begin ahead of the curve with <label className="xerocodee-label">XeroCodee</label>. No need to spend a year
-          crafting a Kubernetes platform. Streamline your process and focus on
-          what truly matters.
+          Begin ahead of the curve with{" "}
+          <label className="xerocodee-label">XeroCodee</label>. No need to spend
+          a year crafting a Kubernetes platform. Streamline your process and
+          focus on what truly matters.
         </p>
       </div>
       <div className="button-section">
@@ -27,6 +28,6 @@ const Suggestion: React.FC = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Suggestion;

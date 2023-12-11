@@ -71,7 +71,9 @@ function ProgressBar() {
           />
         </div>
         <div className="text-center mt-5">
-          <button className="border rounded-md text-sm caret-violet-400">View Details</button>
+          <button className="border rounded-md text-sm caret-violet-400">
+            View Details
+          </button>
         </div>
         <div className="side-box w-full h-3/5 mt-10">
           <div className="side h-1/4 mt-5">
@@ -82,34 +84,34 @@ function ProgressBar() {
                 <p>Status: complete</p>
               </div>
               <div className="flex mt-3">
-                <FaAws className="white" size={20}/>
-                <BsThreeDotsVertical className="col-grey" size={30}/>
+                <FaAws className="white" size={20} />
+                <BsThreeDotsVertical className="col-grey" size={30} />
               </div>
             </div>
           </div>
           <div className="side h-1/4 mt-10">
             <p>Step 2</p>
             <div className="box-box box-two flex justify-between mt-1">
-              <div  className="ml-3">
+              <div className="ml-3">
                 <h2>Github</h2>
                 <p>Status:complete</p>
               </div>
               <div className="flex mt-3">
-                <SiGitlab className="white" size={20}/>
-                <BsThreeDotsVertical className="col-grey" size={30}/>
+                <SiGitlab className="white" size={20} />
+                <BsThreeDotsVertical className="col-grey" size={30} />
               </div>
             </div>
           </div>
           <div className="side h-1/4 mt-10">
             <p>Step 3</p>
             <div className="box-box box-three flex justify-between mt-1">
-              <div  className="ml-3">
+              <div className="ml-3">
                 <h2>MongoDB</h2>
                 <p>Status: Pending</p>
               </div>
               <div className="flex mt-3">
-                <SiMongodb className="white" size={20}/>
-                <BsThreeDotsVertical className="col-grey" size={30}/>
+                <SiMongodb className="white" size={20} />
+                <BsThreeDotsVertical className="col-grey" size={30} />
               </div>
             </div>
           </div>

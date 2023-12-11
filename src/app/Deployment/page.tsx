@@ -33,7 +33,7 @@ function Deployment() {
         <div className="button-container">
           <div className="button-group mt-4">
             <button
-              onClick={() => router.push('/DashPage')}
+              onClick={() => router.push("/DashPage")}
               className="self-host"
             >
               Self Hosting

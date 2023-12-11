@@ -17,13 +17,13 @@ const SignIn: React.FC = () => {
       <div className="signin-content">
         <div className="signin-header">
           <div className="logo-section">
-          <div style={{ display: "flex" }}>
+            <div style={{ display: "flex" }}>
               <Image src={Logo} alt="logo" width={40} />
               <h3
                 style={{
                   marginTop: "50px",
                   marginLeft: "-18px",
-                  fontSize:'23px',
+                  fontSize: "23px",
                   color: "black",
                   fontWeight: "900",
                 }}
@@ -40,12 +40,27 @@ const SignIn: React.FC = () => {
               <span className="underline"></span>
             </div>
             <div className="input-group">
-              <input className="input-field" type="email" placeholder="Email ID" />
-              <input className="input-field" type="password" placeholder="Password"/>
-              <button onClick={() => router.push('/Details')} className="login-button">LOGIN</button>
+              <input
+                className="input-field"
+                type="email"
+                placeholder="Email ID"
+              />
+              <input
+                className="input-field"
+                type="password"
+                placeholder="Password"
+              />
+              <button
+                onClick={() => router.push("/Details")}
+                className="login-button"
+              >
+                LOGIN
+              </button>
             </div>
           </div>
-          <p style={{ color: "grey",marginTop:"10px",marginBottom:'10px' }}>Or</p>
+          <p style={{ color: "grey", marginTop: "10px", marginBottom: "10px" }}>
+            Or
+          </p>
           <div className="social-login-section">
             <div className="button-group">
               <div className="social-button ">

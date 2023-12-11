@@ -1,8 +1,8 @@
-"use-client"
+"use-client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from '../../assets/logo-1f6eb176.png'
+import Logo from "../../assets/logo-1f6eb176.png";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
 import "../../styles/Navbar.scss";
 
