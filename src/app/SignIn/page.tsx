@@ -19,7 +19,7 @@ const SignIn: React.FC = () => {
           <div className="logo-section">
             <div style={{ display: "flex" }}>
               <Image src={Logo} alt="logo" width={40} />
-              <h3
+              <h1
                 style={{
                   marginTop: "50px",
                   marginLeft: "-18px",
@@ -29,7 +29,7 @@ const SignIn: React.FC = () => {
                 }}
               >
                 eroCodee.
-              </h3>
+              </h1>
             </div>
             <h2>Welcome Arya Soni!</h2>
           </div>

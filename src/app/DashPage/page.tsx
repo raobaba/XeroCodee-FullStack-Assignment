@@ -3,7 +3,6 @@ import '../../styles/DashPage.scss'
 import Header from '../Header/page';
 import SideBar from '../SideBar/page';
 import MiddlePage from '../MiddlePage/page';
-import XeroCodePage from './[xerocodee]/page';
 
 function DashPage() {
   return (
@@ -16,7 +15,7 @@ function DashPage() {
              <SideBar/>
           </div>
           <div className='home-container'>
-            <XeroCodePage/>
+            <MiddlePage/>
           </div>
         </div>
     </div>

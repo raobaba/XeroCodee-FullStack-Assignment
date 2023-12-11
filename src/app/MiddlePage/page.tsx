@@ -1,10 +1,16 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import "../../styles/MiddlePage.scss";
 import NavPage from "../NavPage/page";
 import ContentPage from "../ContentPage/page";
 import ProgressBar from "../ProgressBar/page";
 
 const MiddlePage: React.FC = () => {
+  const [progress, setProgress] = useState<number>(0);
+
+  const updateProgress = (newProgress: number) => {
+    setProgress(newProgress);
+  };
   return (
     <div className="middlepage-container">
       <div className="navpage-container">
@@ -12,10 +18,10 @@ const MiddlePage: React.FC = () => {
       </div>
       <div className="middle">
         <div className="contentpage-container">
-          <ContentPage />
+          <ContentPage updateProgress={updateProgress} />
         </div>
         <div className="progressbar-container">
-          <ProgressBar />
+          <ProgressBar percentage={progress} />
         </div>
       </div>
     </div>

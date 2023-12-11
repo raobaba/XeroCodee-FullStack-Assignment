@@ -63,11 +63,11 @@
 
 .plan-section {
   display: flex;
-  width: 30%;
+  width: 27%;
   gap: 5%;
   height: 40px;
   border-radius: 30px;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: rgb(240, 240, 3);
 }
@@ -79,6 +79,11 @@
   justify-content: space-around;
   align-items: center;
   border-radius: 5px;
+}
+
+.upgrad-user{
+  color: black;
+  font-weight: 700;
 }
 
 .profile-section {

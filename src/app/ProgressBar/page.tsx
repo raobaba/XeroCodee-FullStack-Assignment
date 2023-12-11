@@ -8,18 +8,24 @@ import { FaAws } from "react-icons/fa";
 import { SiGitlab } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 
-function ProgressBar() {
-  const [percentage, setPercentage] = useState(0);
+interface ProgressBarProps {
+  percentage: number;
+}
+
+const ProgressBar: React.FC<ProgressBarProps> = ({ percentage: initialPercentage }) => {
+  const [progress, setProgress] = useState(0);
   const containerRef = useRef(null);
+
+  console.log(progress)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting && percentage < 100) {
+          if (entry.isIntersecting && progress < 100) {
             const interval = setInterval(() => {
-              setPercentage((prevPercentage) =>
-                prevPercentage >= 100 ? 100 : prevPercentage + 1
+              setProgress((prevProgress) =>
+                prevProgress >= 100 ? 100 : prevProgress + 1
               );
             }, 50);
             return () => clearInterval(interval);
@@ -38,7 +44,7 @@ function ProgressBar() {
         observer.unobserve(containerRef.current);
       }
     };
-  }, [percentage]);
+  }, [progress]);
 
   return (
     <div className="ProgressBar">
@@ -47,10 +53,10 @@ function ProgressBar() {
           <h2>Your Progress</h2>
           <p>Towards XeroCodee</p>
         </div>
-        <div ref={containerRef} className="progress">
+        <div className="progress">
           <CircularProgressbar
-            value={percentage}
-            text={`${percentage}%`}
+            value={initialPercentage}
+            text={`${initialPercentage}%`}
             strokeWidth={15}
             styles={{
               path: {
@@ -58,7 +64,6 @@ function ProgressBar() {
                 strokeLinecap: "butt",
                 transition: "stroke-dashoffset 0.10s ease 0s",
               },
-              // Adjust the trail's size
               trail: {
                 stroke: "#d6d6d6",
                 strokeLinecap: "butt",
@@ -81,7 +86,7 @@ function ProgressBar() {
             <div className="box-box box-one flex justify-between mt-1">
               <div className="ml-3">
                 <h2>AWS</h2>
-                <p>Status: complete</p>
+                <p>Status:{initialPercentage >= 40 ? 'Complete' : 'Pending'}</p>
               </div>
               <div className="flex mt-3">
                 <FaAws className="white" size={20} />
@@ -94,7 +99,7 @@ function ProgressBar() {
             <div className="box-box box-two flex justify-between mt-1">
               <div className="ml-3">
                 <h2>Github</h2>
-                <p>Status:complete</p>
+                <p>Status:{initialPercentage >= 80 ? 'Complete' : 'Pending'}</p>
               </div>
               <div className="flex mt-3">
                 <SiGitlab className="white" size={20} />
@@ -107,7 +112,7 @@ function ProgressBar() {
             <div className="box-box box-three flex justify-between mt-1">
               <div className="ml-3">
                 <h2>MongoDB</h2>
-                <p>Status: Pending</p>
+                <p>Status: {initialPercentage === 100 ? 'Complete' : 'Pending'}</p>
               </div>
               <div className="flex mt-3">
                 <SiMongodb className="white" size={20} />

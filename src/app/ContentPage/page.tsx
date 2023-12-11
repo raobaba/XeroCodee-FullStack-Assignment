@@ -13,7 +13,22 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import { SiRedis } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 
-function ContentPage() {
+interface ContentPageProps {
+  updateProgress: (progress: number) => void;
+}
+const ContentPage: React.FC<ContentPageProps> = ({ updateProgress }) => {
+  const handleIconClick = (stepNumber: number) => {
+    let progress = 0;
+    if (stepNumber === 1) {
+      progress = 40;
+    } else if (stepNumber === 2) {
+      progress = 80;
+    } else if (stepNumber === 3) {
+      progress = 100;
+    }
+   console.log(progress)
+    updateProgress(progress);
+  };
   return (
     <div className="ContentPage">
       <div className="circle-container">
@@ -39,7 +54,7 @@ function ContentPage() {
             <p>Connect to Cloud</p>
           </div>
           <div className="box-option">
-            <div className="icon-container">
+            <div onClick={() => handleIconClick(1)} className="icon-container">
               <div className="h-16 mt-7 m-auto w-16">
                 <div>
                   <h1 className="text-xl text-slate-950 font-bold text-center">
@@ -56,7 +71,7 @@ function ContentPage() {
                 <FaAws size={55} />
               </div>
             </div>
-            <div className="icon-container">
+            <div onClick={() => handleIconClick(1)} className="icon-container">
               <div className="h-16 mt-7 m-auto w-16">
                 <div>
                   <h1 className="text-xl text-slate-950 font-bold text-center">
@@ -81,7 +96,7 @@ function ContentPage() {
             <p>Connect to Source Code</p>
           </div>
           <div className="box-option">
-            <div className="icon-container">
+            <div onClick={() => handleIconClick(2)} className="icon-container">
               <div className="h-16 mt-7 m-auto w-18">
                 <div>
                   <h1 className="text-xl text-slate-950 font-bold text-center">
@@ -98,7 +113,7 @@ function ContentPage() {
                 <FaGithub size={45} />
               </div>
             </div>
-            <div className="icon-container">
+            <div onClick={() => handleIconClick(2)} className="icon-container">
               <div className="h-16 mt-7 m-auto w-16">
                 <div>
                   <h1 className="text-xl text-slate-950 font-bold text-center">
@@ -115,7 +130,7 @@ function ContentPage() {
                 <FaGitlab size={45} />
               </div>
             </div>
-            <div className="icon-container">
+            <div onClick={() => handleIconClick(2)} className="icon-container">
               <div className="h-16 mt-7 m-auto w-16">
                 <div>
                   <h1 className="text-xl text-slate-950 font-bold text-center">
@@ -140,7 +155,7 @@ function ContentPage() {
             <p>Connect to Database</p>
           </div>
           <div className="box-option">
-            <div className="icon-container">
+            <div onClick={() => handleIconClick(3)} className="icon-container">
               <div className="h-16 mt-7 m-auto w-16">
                 <div>
                   <h1 className="text-xl text-slate-950 font-bold text-center">
@@ -157,7 +172,7 @@ function ContentPage() {
                 <SiMongodb size={55} />
               </div>
             </div>
-            <div className="icon-container">
+            <div onClick={() => handleIconClick(3)} className="icon-container">
               <div className="h-16 mt-7 m-auto w-16">
                 <div>
                   <h1 className="text-xl text-slate-950 font-bold text-center">
@@ -174,7 +189,7 @@ function ContentPage() {
                 <SiRedis size={55} />
               </div>
             </div>
-            <div className="icon-container">
+            <div onClick={() => handleIconClick(3)} className="icon-container">
               <div className="h-16 mt-7 m-auto w-16">
                 <div>
                   <h1 className="text-xl text-slate-950 font-bold text-center">
