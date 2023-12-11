@@ -17,7 +17,7 @@ function SideBar() {
   return (
     <div className="CustomSideBar">
       <div className="sidebar-content">
-        <Link href="/xerocodee">
+        <Link href="/DashPage/xerocodee">
           <div className="sidebar-item">
             <CgMenuGridR className='icon' size={25} />
             <p className="side-text">XeroCodee</p>

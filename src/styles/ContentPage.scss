@@ -1,0 +1,74 @@
+.ContentPage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.circle-container{
+    width: 10%;
+    height: 100%;
+}
+
+.big-circle{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(12,90,197);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: -10px;
+}
+
+.vertical{
+    width: 11%;
+    height: 150px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.small-circle{
+    width: 14px;
+    height: 14px;
+    background-color: rgb(255,255,255);
+    border-radius: 50%;
+}
+
+.option-container{
+    width: 80%;
+    height: 100%;
+}
+
+.step{
+    width: 100%;
+    height: 33.3%;
+    
+}
+.step-number{
+    width: 30%;
+    height: 25%;
+}
+.box-option{
+    width: 100%;
+    height: 60%;
+    margin: auto;
+    display: flex;
+    margin: auto;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-container{
+    width: 33%;
+    height: 90%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    border-radius: 20px;
+}
+
+.step-number h3,p{
+    font-size: 13px;
+    color: grey;
+}
