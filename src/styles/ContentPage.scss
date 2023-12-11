@@ -51,9 +51,22 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     border-radius: 20px;
     cursor: pointer;
+    display: flex;
+    justify-content: space-around;
 }
 
 .step-number h3,p{
     font-size: 13px;
     color: grey;
+}
+.back-red{
+    color: red;
+}
+.back-green{
+    color: deepskyblue;
+}
+.aws-icon{
+    background-color: rgb(255,245,229);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
