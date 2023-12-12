@@ -30,6 +30,13 @@
   transition: background-color 0.3s, transform 0.2s;
   transform: scale(1.05);
 }
+.sidebar-item.active {
+  background-color: #ffff; /* Your active background color */
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  transition: background-color 0.3s, transform 0.2s;
+  transform: scale(1.05);
+}
 
 @media screen and (min-width: 768px) and (max-width: 1167px) {
   .side-text {

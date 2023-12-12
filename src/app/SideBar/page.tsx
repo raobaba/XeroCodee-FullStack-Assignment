@@ -13,79 +13,36 @@ import { GrShieldSecurity } from "react-icons/gr";
 import { MdOutlineWebhook } from "react-icons/md";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
 
-function SideBar() {
-  return (
-    <div className="CustomSideBar">
+  const sidebarItems = [
+    { href: "/DashPage/xerocodee", icon: <CgMenuGridR size={25} />, text: "XeroCodee" },
+    { href: "/buildercenter", icon: <FiLayers size={25} />, text: "Builder Center" },
+    { href: "/serviceboard", icon: <MdOutlineMiscellaneousServices size={25} />, text: "Service Board" },
+    { href: "/cluster", icon: <GiCrystalCluster size={25} />, text: "Cluster" },
+    { href: "/database", icon: <AiFillDatabase size={25} />, text: "Database" },
+    { href: "/environment", icon: <FaEnvira size={25} />, text: "Environment" },
+    { href: "/workflow", icon: <GiFlowerTwirl size={25} />, text: "Workflow" },
+    { href: "/monitoring", icon: <PiMonitorBold size={25} />, text: "Monitoring" },
+    { href: "/security", icon: <GrShieldSecurity size={25} />, text: "Security" },
+    { href: "/webhooks", icon: <MdOutlineWebhook size={25} />, text: "WebHooks" },
+    { href: "/logerror", icon: <AiOutlineMenuUnfold size={25} />, text: "Log Error" },
+  ];
+  
+  function SideBar() {
+    const activeItem = "/DashPage/xerocodee";
+    return (
+      <div className="CustomSideBar">
       <div className="sidebar-content">
-        <Link href="/DashPage/xerocodee">
-          <div className="sidebar-item">
-            <CgMenuGridR className="icon" size={25} />
-            <p className="side-text">XeroCodee</p>
-          </div>
-        </Link>
-        <Link href="/buildercenter">
-          <div className="sidebar-item">
-            <FiLayers className="icon" size={25} />
-            <p className="side-text">Builder Center</p>
-          </div>
-        </Link>
-        <Link href="/serviceboard">
-          <div className="sidebar-item">
-            <MdOutlineMiscellaneousServices className="icon" size={25} />
-            <p className="side-text">Service Board</p>
-          </div>
-        </Link>
-        <Link href="/cluster">
-          <div className="sidebar-item">
-            <GiCrystalCluster className="icon" size={25} />
-            <p className="side-text">Cluster</p>
-          </div>
-        </Link>
-        <Link href="/database">
-          <div className="sidebar-item">
-            <AiFillDatabase className="icon" size={25} />
-            <p className="side-text">Database</p>
-          </div>
-        </Link>
-        <Link href="/environment">
-          <div className="sidebar-item">
-            <FaEnvira className="icon" size={25} />
-            <p className="side-text">Environment</p>
-          </div>
-        </Link>
-        <Link href="/workflow">
-          <div className="sidebar-item">
-            <GiFlowerTwirl className="icon" size={25} />
-            <p className="side-text">Workflow</p>
-          </div>
-        </Link>
-        <Link href="/monitoring">
-          <div className="sidebar-item">
-            <PiMonitorBold className="icon" size={25} />
-            <p className="side-text">Monitoring</p>
-          </div>
-        </Link>
-        <Link href="/security">
-          <div className="sidebar-item">
-            <GrShieldSecurity className="icon" size={25} />
-            <p className="side-text">Security</p>
-          </div>
-        </Link>
-        <Link href="/webhooks">
-          <div className="sidebar-item">
-            <MdOutlineWebhook className="icon" size={25} />
-            <p className="side-text">WebHooks</p>
-          </div>
-        </Link>
-        <Link href="/logerror">
-          <div className="sidebar-item">
-            <AiOutlineMenuUnfold className="icon" size={25} />
-            <p className="side-text">Log Error</p>
-          </div>
-        </Link>
+        {sidebarItems.map((item, index) => (
+          <Link href={item.href} key={index}>
+            <div className={`sidebar-item ${item.href === activeItem ? 'active' : ''}`}>
+              {item.icon}
+              <p className="side-text">{item.text}</p>
+            </div>
+          </Link>
+        ))}
       </div>
     </div>
-  );
-}
-
-export default SideBar;
+    );
+  }
+  
+  export default SideBar

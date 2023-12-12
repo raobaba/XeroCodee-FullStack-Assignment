@@ -68,7 +68,7 @@ const ContentPage: React.FC<ContentPageProps> = ({ updateProgress }) => {
                 </div>
               </div>
               <div className="aws-icon h-16 flex justify-center m-auto w-20">
-                <FaAws size={55} />
+                <FaAws size={55} className="text-green-800"/>
               </div>
             </div>
             <div onClick={() => handleIconClick(1)} className="icon-container">
@@ -127,7 +127,7 @@ const ContentPage: React.FC<ContentPageProps> = ({ updateProgress }) => {
                 </div>
               </div>
               <div className="aws-icon h-16 flex justify-center m-auto w-20">
-                <FaGitlab size={45} />
+                <FaGitlab size={45} className="colored-red"/>
               </div>
             </div>
             <div onClick={() => handleIconClick(2)} className="icon-container">
@@ -159,7 +159,7 @@ const ContentPage: React.FC<ContentPageProps> = ({ updateProgress }) => {
               <div className="h-16 mt-7 m-auto w-16">
                 <div>
                   <h1 className="text-xl text-slate-950 font-bold text-center">
-                    AWS
+                    MongoDB
                   </h1>
                 </div>
                 <div className="flex mt-5 justify-center">
@@ -168,8 +168,8 @@ const ContentPage: React.FC<ContentPageProps> = ({ updateProgress }) => {
                   <IoMdSync />
                 </div>
               </div>
-              <div className="aws-icon h-16 flex justify-center m-auto w-20">
-                <SiMongodb size={55} />
+              <div className="aws-icon h-16 flex justify-center m-auto w-16">
+                <SiMongodb size={55} className="text-green-800"/>
               </div>
             </div>
             <div onClick={() => handleIconClick(3)} className="icon-container">
@@ -186,7 +186,7 @@ const ContentPage: React.FC<ContentPageProps> = ({ updateProgress }) => {
                 </div>
               </div>
               <div className="aws-icon h-16 flex justify-center m-auto w-20">
-                <SiRedis size={55} />
+                <SiRedis size={55} className="colored-red"/>
               </div>
             </div>
             <div onClick={() => handleIconClick(3)} className="icon-container">

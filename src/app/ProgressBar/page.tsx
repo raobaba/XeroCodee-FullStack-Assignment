@@ -50,8 +50,8 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ percentage: initialPercentage
     <div className="ProgressBar">
       <div className="progress-content">
         <div className="towards-xerocodee">
-          <h2>Your Progress</h2>
-          <p>Towards XeroCodee</p>
+          <h1 className="text-xl font-bold">Your Progress</h1>
+          <p className="text-sm">Towards XeroCodee</p>
         </div>
         <div className="progress">
           <CircularProgressbar
@@ -102,7 +102,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ percentage: initialPercentage
                 <p>Status:{initialPercentage >= 80 ? 'Complete' : 'Pending'}</p>
               </div>
               <div className="flex mt-3">
-                <SiGitlab className="white" size={20} />
+                <SiGitlab className="white text-green-800" size={20} />
                 <BsThreeDotsVertical className="col-grey" size={30} />
               </div>
             </div>
@@ -114,8 +114,9 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ percentage: initialPercentage
                 <h2>MongoDB</h2>
                 <p>Status: {initialPercentage === 100 ? 'Complete' : 'Pending'}</p>
               </div>
+              {/* className="text-green-800" */}
               <div className="flex mt-3">
-                <SiMongodb className="white" size={20} />
+                <SiMongodb className="white text-green-800" size={20} />
                 <BsThreeDotsVertical className="col-grey" size={30} />
               </div>
             </div>
