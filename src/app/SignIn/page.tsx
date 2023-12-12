@@ -9,8 +9,24 @@ import { IoLogoGithub } from "react-icons/io5";
 import Link from "next/link";
 import Image from "next/image";
 import "../../styles/SignIn.scss";
+import { signIn, signOut, useSession } from "next-auth/react";
+
 
 const SignIn: React.FC = () => {
+
+  const { data: session } = useSession();
+
+  if (session && session.user) {
+    return (
+      <div className="flex gap-4 ml-auto">
+        <p className="text-sky-600">{session.user.name}</p>
+        <button onClick={() => signOut()} className="text-red-600">
+          Sign Out
+        </button>
+      </div>
+    );
+  }
+
   const router = useRouter();
   return (
     <div className="signin-container">
@@ -69,7 +85,7 @@ const SignIn: React.FC = () => {
                   {" "}
                   <FcGoogle size={27} />{" "}
                 </button>{" "}
-                <button className="google">Google SignIn</button>
+                <button onClick={() => signIn('google')} className="google">Google SignIn</button>
               </div>
               <div className="social-button">
                 {" "}
@@ -77,7 +93,7 @@ const SignIn: React.FC = () => {
                   {" "}
                   <IoLogoGithub size={27} />{" "}
                 </button>{" "}
-                <button className="github">Github SignIn</button>
+                <button onClick={() => signIn('github')}  className="github">Github SignIn</button>
               </div>
             </div>
             <div>

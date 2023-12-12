@@ -47,3 +47,31 @@ We welcome contributions, bug reports, or feature requests. Feel free to fork th
 ---
 
 This documentation provides an overview of the project's components, functionality, and setup instructions. For more detailed information, refer to specific sections in the codebase or reach out to the project contributors.
+
+XeroCodee
+ .next
+ node_modules
+ public
+ src
+  app
+   api/auth/[...nextauth]
+    route.ts
+   SignUp
+    page.tsx
+   SignIn
+    page.tsx
+  assets
+  styles
+  .env
+  .eslintrc.json
+  .gitignore
+  next-env.d.ts
+  next.config.js
+  package-lock.json
+  package.json
+  postcss.config.js
+  README.md
+  tailwind.config.ts
+  tsconfig.json
+  
+ 

@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import Logo from "../../assets/logo-1f6eb176.png";
 import digitalTransformation from "../../assets/digital-transformation-animate.svg";
@@ -7,8 +8,11 @@ import { IoLogoGithub } from "react-icons/io5";
 import Link from "next/link";
 import Image from "next/image";
 import "../../styles/SignIn.scss";
+import { signIn } from "next-auth/react";
 
 const SignUp: React.FC = () => {
+
+  
   return (
     <div className="signup-container">
       <div className="signup-content">
@@ -75,7 +79,7 @@ const SignUp: React.FC = () => {
                   {" "}
                   <FcGoogle size={27} />{" "}
                 </button>{" "}
-                <button className="google">Google SignUp</button>
+                <button onClick={() => signIn('google')} className="google">Google SignUp</button>
               </div>
               <div className="social-button">
                 {" "}
@@ -83,7 +87,7 @@ const SignUp: React.FC = () => {
                   {" "}
                   <IoLogoGithub size={27} />{" "}
                 </button>{" "}
-                <button className="github">Github SignUp</button>
+                <button onClick={() => signIn('github')} className="github">Github SignUp</button>
               </div>
             </div>
 

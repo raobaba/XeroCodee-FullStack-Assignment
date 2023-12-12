@@ -36,7 +36,7 @@ import { AiOutlineMenuUnfold } from "react-icons/ai";
           <Link href={item.href} key={index}>
             <div className={`sidebar-item ${item.href === activeItem ? 'active' : ''}`}>
               {item.icon}
-              <p className="side-text">{item.text}</p>
+              <h4 className="side-text">{item.text}</h4>
             </div>
           </Link>
         ))}

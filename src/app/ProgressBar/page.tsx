@@ -84,7 +84,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ percentage: initialPercentage
           <div className="side h-1/4 mt-5">
             <p>Step 1</p>
             <div className="box-box box-one flex justify-between mt-1">
-              <div className="ml-3">
+              <div className="ml-3 mt-2">
                 <h2>AWS</h2>
                 <p>Status:{initialPercentage >= 40 ? 'Complete' : 'Pending'}</p>
               </div>
@@ -97,7 +97,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ percentage: initialPercentage
           <div className="side h-1/4 mt-10">
             <p>Step 2</p>
             <div className="box-box box-two flex justify-between mt-1">
-              <div className="ml-3">
+              <div className="ml-3 mt-2">
                 <h2>Github</h2>
                 <p>Status:{initialPercentage >= 80 ? 'Complete' : 'Pending'}</p>
               </div>
@@ -110,14 +110,14 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ percentage: initialPercentage
           <div className="side h-1/4 mt-10">
             <p>Step 3</p>
             <div className="box-box box-three flex justify-between mt-1">
-              <div className="ml-3">
+              <div className="ml-3 mt-2">
                 <h2>MongoDB</h2>
                 <p>Status: {initialPercentage === 100 ? 'Complete' : 'Pending'}</p>
               </div>
               {/* className="text-green-800" */}
               <div className="flex mt-3">
                 <SiMongodb className="white text-green-800" size={20} />
-                <BsThreeDotsVertical className="col-grey" size={30} />
+                <BsThreeDotsVertical className="col-grey mb-5" size={30} />
               </div>
             </div>
           </div>
